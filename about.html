@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About SHINELY LIMITED - Professional Cleaning Services with 10+ Years Experience">
+  <title>About Us | SHINELY Cleaning Services</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --primary: #5B21B6;       /* Deep Purple */
+      --secondary: #3B07FF;     /* Electric Blue */
+      --accent: #E0955A;        /* Peach/Coral */
+      --highlight: #FBBF24;     /* Golden Yellow */
+      --text-dark: #0F172A;
+      --text-light: #64748B;
+      --bg-light: #F8FAFC;
+      --white: #FFFFFF;
+      --shadow: 0 10px 40px rgba(91, 33, 182, 0.15);
+      --shadow-sm: 0 4px 12px rgba(91, 33, 182, 0.08);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background: var(--bg-light);
+    }
+
+    /* Header */
+    header {
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .logo-badge {
+      width: 45px;
+      height: 45px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--secondary);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(91, 33, 182, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(91, 33, 182, 0.5);
+    }
+
+    .btn-accent {
+      background: var(--accent);
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(224, 149, 90, 0.4);
+    }
+
+    .btn-accent:hover {
+      background: #CC7E45;
+      transform: translateY(-2px);
+    }
+
+    /* Page Header with Video */
+    .page-header {
+      position: relative;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8rem 2rem 4rem;
+      overflow: hidden;
+      background: transparent;
+    }
+    
+
+    .page-header-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 0;
+      object-fit: cover;
+      opacity: 1;
+    }
+ 
+    .page-header-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+
+    .page-header h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 15px rgba(0,0,0,0.3);
+    }
+
+    .page-header p {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 1.5rem;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .back-link:hover {
+      gap: 0.75rem;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 6rem 2rem;
+      background: var(--white);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-image {
+      position: relative;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .experience-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      background: linear-gradient(135deg, var(--accent), var(--highlight));
+      color: var(--white);
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .experience-badge h3 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .experience-badge p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .about-content h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content p {
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .feature-item h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 0.25rem;
+    }
+
+    .feature-item p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin: 0;
+    }
+
+    /* What's Included Section */
+    .included-section {
+      padding: 6rem 2rem;
+      background: var(--bg-light);
+    }
+
+    .included-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .included-content h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .included-content p {
+      color: var(--text-light);
+      margin-bottom: 2rem;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    .checklist {
+      list-style: none;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      padding: 1rem;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .checklist li:hover {
+      transform: translateX(5px);
+      box-shadow: var(--shadow);
+    }
+
+    .checklist i {
+      color: var(--success);
+      font-size: 1.3rem;
+      margin-top: 0.2rem;
+    }
+
+    .checklist strong {
+      color: var(--text-dark);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .checklist span {
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    /* Services Section */
+    .services-section {
+      padding: 6rem 2rem;
+      background: var(--white);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-header h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .section-header p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: var(--bg-light);
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border-top: 4px solid var(--accent);
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    /* Mission Section */
+    .mission-section {
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--white);
+      text-align: center;
+    }
+
+    .mission-section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .mission-section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+      opacity: 0.95;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 3rem;
+      margin-top: 4rem;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    .stat-item p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin: 0;
+    }
+
+    /* Values Section */
+    .values-section {
+      padding: 6rem 2rem;
+      background: var(--bg-light);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .value-card {
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: var(--transition);
+      border-top: 4px solid var(--accent);
+    }
+
+    .value-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow);
+    }
+
+    .value-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, rgba(224, 149, 90, 0.15), rgba(251, 191, 36, 0.15));
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 1.5rem;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    .value-card h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 1rem;
+    }
+
+    .value-card p {
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    /* Why Choose Section */
+    .why-choose-section {
+      padding: 6rem 2rem;
+      background: var(--white);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 1.5rem;
+      padding: 2rem;
+      background: var(--bg-light);
+      border-radius: 15px;
+      transition: var(--transition);
+    }
+
+    .why-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .why-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--success), #28a745);
+      color: var(--white);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .why-item h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .why-item p {
+      color: var(--text-light);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, var(--accent), var(--highlight));
+      text-align: center;
+      color: var(--white);
+    }
+
+    .cta-section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      opacity: 0.95;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons .btn {
+      background: var(--white);
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .cta-buttons .btn:hover {
+      background: var(--text-dark);
+      color: var(--white);
+    }
+
+    .cta-buttons .btn-outline {
+      background: transparent;
+      border: 2px solid var(--white);
+      color: var(--white);
+    }
+
+    .cta-buttons .btn-outline:hover {
+      background: var(--white);
+      color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--text-dark);
+      color: var(--white);
+      padding: 3rem 2rem 1rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-section h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--white);
+    }
+
+    .footer-section p {
+      color: #94a3b8;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-section ul li a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .footer-section ul li a:hover {
+      color: var(--secondary);
+      padding-left: 5px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid #1e293b;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+      .nav-links {
+        display: none;
+      }
+
+      .page-header h1 {
+        font-size: 2.5rem;
+      }
+
+      .about-grid,
+      .included-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .mission-section h2 {
+        font-size: 2rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+
+      .services-grid,
+      .values-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page-header h1 {
+        font-size: 2rem;
+      }
+
+      .section-header h2 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .experience-badge {
+        bottom: -10px;
+        right: -10px;
+        padding: 1.5rem;
+      }
+
+      .experience-badge h3 {
+        font-size: 2.5rem;
+      }
+
+      .hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15); /* Very subtle dark tint for video visibility */
+  z-index: 1;
+}
+.hero h1, .hero p {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85); /* Keeps text readable on any video */
+}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="about.html" class="logo">
+        <img src="images/brandlogo_bg.png" alt="SHINELY Logo" style="height: 50px; width: auto;">
+        Shinely Cleaning Services
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="quote.html" class="btn btn-primary">Get a Quote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Header with Video -->
+  <section class="page-header">
+    <video class="page-header-video" autoplay muted loop playsinline>
+      <source src="videos/general_page_vid.mp4" type="video/mp4">
+    </video>
+    <div class="page-header-content">
+      <h1>About SHINELY LIMITED</h1>
+      <p>Your trusted partner in professional cleaning services</p>
+      <a href="index.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="images/bathroom.jpg" alt="About SHINELY">
+          <div class="experience-badge">
+            <h3>10+</h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>Dedicated to Cleanliness & Excellence</h2>
+          <p>SHINELY LIMITED is a Professional Cleaning Company dedicated to delivering high-quality, reliable, and affordable cleaning solutions for homes and businesses.</p>
+          <p>We specialize in Domestic Cleaning, Deep Cleaning, End of Tenancy, and Airbnb cleaning, ensuring every space is left spotless, fresh and welcoming.</p>
+          <p>Our goal is simple: to provide consistent, trustworthy service that gives our clients peace of mind.</p>
+          
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div>
+                <h4>Fully Insured</h4>
+                <p>Complete coverage for your peace of mind</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <div>
+                <h4>Eco-Friendly</h4>
+                <p>Safe, non-toxic cleaning products</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div>
+                <h4>100% Guarantee</h4>
+                <p>Satisfaction guaranteed on every job</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-user-check"></i>
+              </div>
+              <div>
+                <h4>Vetted Team</h4>
+                <p>Trained & background-checked professionals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included Section -->
+  <section class="included-section">
+    <div class="container">
+      <div class="included-grid">
+        <div class="included-content">
+          <h2>What's Included in Our General Cleaning?</h2>
+          <p>Our comprehensive general cleaning service covers all essential areas of your property, ensuring nothing is overlooked. Here's what you can expect:</p>
+          <ul class="checklist">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Dusting</strong>
+                <span>All surfaces, fixtures, baseboards, and hard-to-reach areas</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Vacuuming & Mopping</strong>
+                <span>All floors, carpets, and hard surfaces</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Bathroom Sanitization</strong>
+                <span>Toilets, sinks, showers, tubs, mirrors, and fixtures</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Kitchen Cleaning</strong>
+                <span>Countertops, appliances, sinks, and cabinet exteriors</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Trash Removal</strong>
+                <span>Emptying all bins and replacing liners</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Window Cleaning</strong>
+                <span>Interior windows and sills (exterior available)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="included-image">
+          <img src="images/lounge.jpg" alt="Cleaning Services" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our General Cleaning Services</h2>
+        <p>Comprehensive cleaning solutions for every need</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3>Residential Cleaning</h3>
+          <p>Regular housekeeping services including dusting, vacuuming, mopping, bathroom sanitization, and kitchen cleaning. Keep your home fresh and inviting with our reliable weekly, bi-weekly, or monthly schedules.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>Commercial Cleaning</h3>
+          <p>Professional office cleaning that creates a productive work environment. We handle desks, common areas, restrooms, break rooms, and high-touch surfaces to maintain a pristine workplace.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-broom"></i>
+          </div>
+          <h3>Deep Cleaning</h3>
+          <p>Intensive cleaning that goes beyond surface level. We tackle baseboards, inside appliances, behind furniture, grout, and hard-to-reach areas for a truly thorough clean.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-key"></i>
+          </div>
+          <h3>Move-In/Move-Out Cleaning</h3>
+          <p>End of tenancy cleaning that ensures you get your deposit back or walk into a spotless new home. We clean every corner so you can focus on your move.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-bed"></i>
+          </div>
+          <h3>Airbnb & Short-Term Rental</h3>
+          <p>Fast turnaround cleaning between guests. We ensure your property is guest-ready with fresh linens, sanitized surfaces, and that welcoming first impression.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-warehouse"></i>
+          </div>
+          <h3>Industrial & Warehouse</h3>
+          <p>Heavy-duty cleaning for warehouses, factories, and industrial facilities. Floor scrubbing, high-reach dusting, equipment cleaning, and safety compliance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission-section">
+    <div class="container">
+      <h2>Our Mission & Vision</h2>
+      <p>We're committed to transforming spaces and improving lives through exceptional cleaning services. Our mission is to deliver consistent, reliable, and eco-friendly cleaning solutions that exceed expectations.</p>
+      
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-item">
+          <h3>10+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p>Satisfaction Rate</p>
+        </div>
+        <div class="stat-item">
+          <h3>24/7</h3>
+          <p>Support Available</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="values-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose SHINELY</h2>
+        <p>We're more than just cleaners – we're your partners in maintaining a pristine environment</p>
+      </div>
+      
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Quality First</h3>
+          <p>We never compromise on quality. Every cleaning is done with meticulous attention to detail and the highest standards.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Reliable Service</h3>
+          <p>We value your time. Our team arrives on schedule and completes the job efficiently without cutting corners.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-hand-holding-heart"></i>
+          </div>
+          <h3>Customer Care</h3>
+          <p>Your satisfaction is our priority. We listen to your needs and customize our services to exceed expectations.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-tag"></i>
+          </div>
+          <h3>Fair Pricing</h3>
+          <p>Transparent, competitive rates with no hidden fees. Quality cleaning that fits your budget.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-recycle"></i>
+          </div>
+          <h3>Eco-Conscious</h3>
+          <p>We use environmentally friendly products that are tough on dirt but gentle on the planet and your family.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Expert Team</h3>
+          <p>Our professionals are trained, insured, and passionate about delivering exceptional results every time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why SHINELY Stands Out -->
+  <section class="why-choose-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why SHINELY Stands Out</h2>
+        <p>We're more than just cleaners – we're your partners in maintaining a pristine environment</p>
+      </div>
+      
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div>
+            <h4>Fully Insured & Bonded</h4>
+            <p>Your property and peace of mind are protected with our comprehensive insurance coverage.</p>
+          </div>
+        </div>
+        
+        <div class="why-item">
+          <div class="why-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div>
+            <h4>Eco-Friendly Products</h4>
+            <p>We use safe, non-toxic cleaning solutions that are tough on dirt but gentle on the environment.</p>
+          </div>
+        </div>
+        
+        <div class="why-item">
+          <div class="why-icon">
+            <i class="fas fa-user-check"></i>
+          </div>
+          <div>
+            <h4>Vetted Professionals</h4>
+            <p>All our cleaners are thoroughly background-checked, trained, and committed to excellence.</p>
+          </div>
+        </div>
+        
+        <div class="why-item">
+          <div class="why-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div>
+            <h4>Flexible Scheduling</h4>
+            <p>We work around your schedule with flexible timing options including evenings and weekends.</p>
+          </div>
+        </div>
+        
+        <div class="why-item">
+          <div class="why-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <div>
+            <h4>100% Satisfaction Guarantee</h4>
+            <p>Not happy? We'll re-clean at no extra cost. Your satisfaction is our priority.</p>
+          </div>
+        </div>
+        
+        <div class="why-item">
+          <div class="why-icon">
+            <i class="fas fa-tag"></i>
+          </div>
+          <div>
+            <h4>Competitive Pricing</h4>
+            <p>Transparent, affordable rates with no hidden fees. Quality cleaning that fits your budget.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Experience the SHINELY Difference?</h2>
+      <p>Join hundreds of satisfied clients who trust us to keep their spaces spotless. Get your free, no-obligation quote today!</p>
+      <div class="cta-buttons">
+        <a href="quote.html" class="btn">Request Free Quote</a>
+        <a href="tel:+15551234567" class="btn btn-outline">Call (555) 123-4567</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>SHINELY LIMITED</h3>
+        <p>Bringing shine to every space with professional cleaning services.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="quote.html">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <ul>
+          <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@shinelylimited.com</li>
+          <li><i class="fas fa-phone" style="margin-right: 10px;"></i> (555) 123-4567</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> SHINELY Cleaning Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Update Copyright Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
